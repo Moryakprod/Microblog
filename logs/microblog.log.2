@@ -1,4 +1,6 @@
-2018-12-03 21:25:05,906 ERROR: Exception on /edit_profile [POST] [in /home/alien/Microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+2018-12-03 21:11:52,769 INFO: Microblog startup [in /home/alien/Microblog/app/__init__.py:43]
+2018-12-03 21:17:12,775 INFO: Microblog startup [in /home/alien/Microblog/app/__init__.py:43]
+2018-12-03 21:19:12,244 ERROR: Exception on /edit_profile [POST] [in /home/alien/Microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/alien/Microblog/venv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
     context)
@@ -70,50 +72,3 @@ Traceback (most recent call last):
   File "/home/alien/Microblog/venv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 509, in do_execute
     cursor.execute(statement, parameters)
 sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.username [SQL: 'UPDATE user SET username=?, about_me=? WHERE user.id = ?'] [parameters: ('moryak_prod', '', 4)] (Background on this error at: http://sqlalche.me/e/gkpj)
-2018-12-03 21:31:44,032 INFO: Microblog startup [in /home/alien/Microblog/app/__init__.py:45]
-2018-12-03 21:33:12,592 INFO: Microblog startup [in /home/alien/Microblog/app/__init__.py:45]
-2018-12-03 21:33:23,911 INFO: Microblog startup [in /home/alien/Microblog/app/__init__.py:45]
-2018-12-03 21:44:46,850 INFO: Microblog startup [in /home/alien/Microblog/app/__init__.py:45]
-2018-12-03 21:47:21,230 INFO: Microblog startup [in /home/alien/Microblog/app/__init__.py:45]
-2018-12-03 21:47:28,467 ERROR: Exception on /edit_profile [GET] [in /home/alien/Microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/home/alien/Microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/alien/Microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/alien/Microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/alien/Microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/home/alien/Microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alien/Microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alien/Microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/home/alien/Microblog/app/routes.py", line 95, in edit_profile
-    form = EditProfileForm()
-  File "/home/alien/Microblog/venv/lib/python3.6/site-packages/wtforms/form.py", line 212, in __call__
-    return type.__call__(cls, *args, **kwargs)
-TypeError: __init__() missing 1 required positional argument: 'original_username'
-2018-12-03 21:47:52,027 ERROR: Exception on /edit_profile [GET] [in /home/alien/Microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/home/alien/Microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/alien/Microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/alien/Microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/alien/Microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/home/alien/Microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/alien/Microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/alien/Microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/home/alien/Microblog/app/routes.py", line 95, in edit_profile
-    form = EditProfileForm()
-  File "/home/alien/Microblog/venv/lib/python3.6/site-packages/wtforms/form.py", line 212, in __call__
-    return type.__call__(cls, *args, **kwargs)
-TypeError: __init__() missing 1 required positional argument: 'original_username'
