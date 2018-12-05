@@ -134,3 +134,4 @@ Traceback (most recent call last):
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint 'reset_password_request'. Did you mean 'edit_profile' instead?
 2018-12-03 23:11:53,301 INFO: Microblog startup [in /home/alien/Microblog/app/__init__.py:45]
+2018-12-05 13:04:49,060 INFO: Microblog startup [in /home/alien/Microblog/app/__init__.py:51]
